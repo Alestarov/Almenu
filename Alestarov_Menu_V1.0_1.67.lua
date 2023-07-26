@@ -26,7 +26,7 @@ AlmenuM:add_text("Here are the best and safest ways to cheat money in GTA 5 onli
 AlmenuM:add_text("DO NOT GET A LOT OF MONEY, AND USE THE ''STAT EDITOR' SECTION FOR ACCOUNT SAFETY!!!")
 ult = AlmenuM:add_tab("CEO")
 
-Howtou = ult:add_tab("How to use")
+Howtou = ult:add_tab("How to use CEO")
 
 Howtou:add_text("For the buy Mission:")
 Howtou:add_text("1) Go on the pc in ur ceo apartment")
@@ -556,6 +556,8 @@ AlmenuCredits = Almenu:add_tab("Credits")
 
 Yimura = AlmenuCredits:add_tab("Yimura")
 Yimura:add_text("Yim Menu Cheat creator")
+Yimura:add_text("GitHub:")
+Yimura:add_text("https://github.com/YimMenu/YimMenu")
 
 Alestarov = AlmenuCredits:add_tab("Alestarov")
 Alestarov:add_text("compiled a script")
@@ -575,38 +577,4 @@ SLON:add_text("https://www.unknowncheats.me/forum/grand-theft-auto-v/591335-yimc
 gir489returns = AlmenuCredits:add_tab("gir489returns")
 gir489returns:add_text("The code from the script ''Casino Pacino.lua'' was implemented")
 gir489returns:add_text("Scrip on unknowncheats.me:")
-gir489returns:add_text("https://github.com/YimMenu-Lua/Casino-Pacino/blob/main/CasinoPacino.lua")  
-
-
-
-
-
-
-
-
-
---AlmenuS:add_int_range("Chips", 50000, -10000000, 50000, function()
---	return stats.get_int("MPPLY_CASINO_CHIPS_PUR_GD")
---end, function(value)
---	stats.set_int("MPPLY_CASINO_CHIPS_PUR_GD", value)
---end)
-
-
-
-
-
-
-
---AlmenuCh = Almenu:add_tab("Chips")
---AlmenuCh:add_button("Set", function()
---    stats.get_int("MPPLY_CASINO_CHIPS_PUR_GD", 0)
---	stats.set_int("MPPLY_CASINO_CHIPS_PUR_GD", 0)
---end)
-
---MPX = PI 
---PI = stats.get_int("MPPLY_LAST_MP_CHAR") 
---if PI == 0 then MPX = "MP0_" else MPX = "MP1_" end
-
---PI = stats.get_int("MPPLY_LAST_MP_CHAR")
-
---L7NEG6:add_button("LSCM Prize Ride Unlock", function() stats.set_bool(MPX .. "CARMEET_PV_CHLLGE_CMPLT", true) end)
+gir489returns:add_text("https://github.com/YimMenu-Lua/Casino-Pacino/blob/main/CasinoPacino.lua")
