@@ -52,7 +52,7 @@ https://github.com/xiaoxiao921
 ## 👑 SLON 👑
 (The code from the script ''YimCeo v0.3 by Slon_.lua'' was implemented)
 
-Script on unknowncheats:
+Script on GitHub:
 
 https://www.unknowncheats.me/forum/grand-theft-auto-v/591335-yimceo-ceo-crates-method-yimmenu.html
 ## 👑 gir489returns 👑
