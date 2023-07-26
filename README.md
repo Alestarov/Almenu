@@ -8,7 +8,7 @@
 ## Before using the Script, watch the Video Instruction!
 * [Video Instruction](https://www.youtube.com/watch?v=n0hxmJ8eAtk)
 
-This script was created specifically for the Yim Menu cheat.
+This script was created for the Yim Menu cheat.
 
 This cheat contains the best ways to cheat currency in GTA 5 online.
 
