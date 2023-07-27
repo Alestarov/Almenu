@@ -16,6 +16,20 @@ Also in this cheat there is a Stat editor for account security, and many other f
 
 The script will be supplemented, about all the changes will be written here
 
+# New
+new features added:
+
+1) Menu CMM (Computers Management Menu)
+
+![image](https://github.com/Alestarov/YimMenu-lua-script-Alestarov_Menu/assets/108485130/868f0e3d-d4c4-431f-ace4-3240abb7d23c)
+
+2) In section "CEO" added function "Show master control computer"
+
+![image](https://github.com/Alestarov/YimMenu-lua-script-Alestarov_Menu/assets/108485130/8361ee6b-c5f1-4e69-bfd2-0f725dfa312f)
+
+
+
+
 ## User Agreement TOS
 
 Use agreement：
