@@ -62,7 +62,7 @@ Profile on GitHub:
 
 https://github.com/Alestarov
 ## 👑sch-lda👑
-(allowed to use the code from his script "SCH-LUA-YIMMENU.lua")
+(allowed to use the code from his script "SCH-LUA-YIMMENU.lua)
 
 (The code from the script ''SCH-LUA-YIMMENU.lua'' was implemented)
 
