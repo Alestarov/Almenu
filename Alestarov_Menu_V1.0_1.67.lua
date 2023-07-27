@@ -1,9 +1,48 @@
-Almenu = gui.get_tab("Al_Menu")
+-- Game version: 2944
+-- Online version: 1.67
+--
+--
+--Please also make sure to download the file published by the official GitHub user Alestarov. Any other method may be a malicious script.
+--Github : https://github.com/Alestarov/YimMenu-lua-script-Alestarov_Menu
+--
+--Use agreement：
+--Allow：
+--1) Personal use
+--2) Personal use after modification
+--3) Secondary distribution after modification
+--
+--forbidden:
+--1) Commercial
+--2) After the modification, the secondary distribution still uses the name containing Alestarov
+--
+--
+--
+--
+--
+--
+----------------------------------------------------------
+Almenu = gui.get_tab("Al_Menu v1.1 1.67")
 
-gui.show_message("Alestarov_Menu_V1.0_1.67")
+gui.show_message("Alestarov_Menu_V1.1_1.67")
 gui.show_message("is Successfully launched!")
 
-	Almenu:add_text("         Alestarov_Menu_V1.0_1.67 ")
+	Almenu:add_text("         Alestarov_Menu_V1.1_1.67 ")
+------------------------------------
+
+function run_script(name) --start script thread
+    script.run_in_fiber(function (runscript)
+        SCRIPT.REQUEST_SCRIPT(name)  
+        repeat runscript:yield() until SCRIPT.HAS_SCRIPT_LOADED(name)
+        SYSTEM.START_NEW_SCRIPT(name, 5000)
+        SCRIPT.SET_SCRIPT_AS_NO_LONGER_NEEDED(name)
+    end)
+end
+
+
+
+
+
+------------------------------------
 
 AlmenuS = Almenu:add_tab("Snow")
 
@@ -21,6 +60,104 @@ end)
 
 
 AlmenuM = Almenu:add_tab("Money")
+
+AlmenuF = AlmenuM:add_tab("CMM")
+
+AlmenuF:add_text("Computers Management Menu")
+
+
+
+AlmenuF:add_button("Show master control computer", function()
+    local playerIndex = globals.get_int(1574918) --疑似与MPPLY_LAST_MP_CHAR相等
+    if globals.get_int(1895156+playerIndex*609+10+429+1) == 0 then
+        run_script("apparcadebusinesshub")
+    else
+        if globals.get_int(1895156+playerIndex*609+10+429+1) == 1 then
+            run_script("apparcadebusinesshub")
+        else
+                gui.show_message("Don't forget to register as CEO/Leader")
+                run_script("apparcadebusinesshub")
+        end
+    end
+end)
+
+AlmenuF:add_button("Show office computer", function()
+    local playerIndex = globals.get_int(1574918) --疑似与MPPLY_LAST_MP_CHAR相等
+    if globals.get_int(1895156+playerIndex*609+10+429+1) == 0 then
+        run_script("appfixersecurity")
+    else
+        if globals.get_int(1895156+playerIndex*609+10+429+1) == 1 then
+            globals.set_int(1895156+playerIndex*609+10+429+1,0)
+            gui.show_message("prompt","Converted to CEO")
+            run_script("appfixersecurity")
+            else
+            gui.show_message("Don't forget to register as CEO/Leader","It may also be a script detection error, known problem, no feedback required")
+            run_script("appfixersecurity")
+        end
+    end
+end)
+
+AlmenuF:add_button("show bunker computer", function()
+    local playerIndex = globals.get_int(1574918) --疑似与MPPLY_LAST_MP_CHAR相等
+    if globals.get_int(1895156+playerIndex*609+10+429+1) == 0 then
+        run_script("appbunkerbusiness")
+    else
+        if globals.get_int(1895156+playerIndex*609+10+429+1) == 1 then
+            run_script("appbunkerbusiness")
+            else
+                gui.show_message("Don't forget to register as CEO/Leader","It may also be a script detection error, known problem, no feedback required")
+                run_script("appbunkerbusiness")
+            end
+    end
+end)
+
+AlmenuF:add_button("show hangar computer", function()
+    local playerIndex = globals.get_int(1574918) --疑似与MPPLY_LAST_MP_CHAR相等
+    if globals.get_int(1895156+playerIndex*609+10+429+1) == 0 then
+        run_script("appsmuggler")
+    else
+        if globals.get_int(1895156+playerIndex*609+10+429+1) == 1 then
+            run_script("appsmuggler")
+            else
+                gui.show_message("Don't forget to register as CEO/Leader","It may also be a script detection error, known problem, no feedback required")
+                run_script("appsmuggler")
+            end
+    end
+end)
+
+AlmenuF:add_button("Show the Terrorist Dashboard", function()
+    local playerIndex = globals.get_int(1574918) --疑似与MPPLY_LAST_MP_CHAR相等
+    if globals.get_int(1895156+playerIndex*609+10+429+1) == 0 then
+        run_script("apphackertruck")
+    else
+        if globals.get_int(1895156+playerIndex*609+10+429+1) == 1 then
+            run_script("apphackertruck")
+        else
+            gui.show_message("Don't forget to register as CEO/Leader","It may also be a script detection error, known problem, no feedback required")
+            run_script("apphackertruck")
+        end
+    end
+end)
+
+AlmenuF:add_button("Show Avengers panel", function()
+    local playerIndex = globals.get_int(1574918) --疑似与MPPLY_LAST_MP_CHAR相等
+    if globals.get_int(1895156+playerIndex*609+10+429+1) == 0 then
+        run_script("appAvengerOperations")
+    else
+        if globals.get_int(1895156+playerIndex*609+10+429+1) == 1 then
+            run_script("appAvengerOperations")
+        else
+            gui.show_message("Don't forget to register as CEO/Leader","It may also be a script detection error, known problem, no feedback required")
+            run_script("appAvengerOperations")
+        end
+    end
+end)
+
+
+
+
+
+
 
 AlmenuM:add_text("Here are the best and safest ways to cheat money in GTA 5 online.")
 AlmenuM:add_text("DO NOT GET A LOT OF MONEY, AND USE THE ''STAT EDITOR' SECTION FOR ACCOUNT SAFETY!!!")
@@ -83,6 +220,20 @@ script.register_looped("yimceoloop", function (script)
         end
     end
     script:sleep(500)
+end)
+
+ult:add_button("Show computer", function()
+    local playerIndex = globals.get_int(1574918) --疑似与MPPLY_LAST_MP_CHAR相等
+    if globals.get_int(1895156+playerIndex*609+10+429+1) == 0 then
+        run_script("apparcadebusinesshub")
+    else
+        if globals.get_int(1895156+playerIndex*609+10+429+1) == 1 then
+            run_script("apparcadebusinesshub")
+        else
+                gui.show_message("Don't forget to register as CEO/Leader")
+                run_script("apparcadebusinesshub")
+        end
+    end
 end)
 
 
@@ -556,13 +707,19 @@ AlmenuCredits = Almenu:add_tab("Credits")
 
 Yimura = AlmenuCredits:add_tab("Yimura")
 Yimura:add_text("Yim Menu Cheat creator")
-Yimura:add_text("Profile on GitHub:")
+Yimura:add_text("Cheat on GitHub:")
 Yimura:add_text("https://github.com/YimMenu/YimMenu")
 
 Alestarov = AlmenuCredits:add_tab("Alestarov")
 Alestarov:add_text("compiled a script")
 Alestarov:add_text("Profile on GitHub:")
 Alestarov:add_text("https://github.com/Alestarov")
+
+schlda = AlmenuCredits:add_tab("sch-lda")
+schlda:add_text("allowed to use the code from his script ''SCH-LUA-YIMMENU.lua''")
+schlda:add_text("The code from the script ''SCH-LUA-YIMMENU.lua'' was implemented")
+schlda:add_text("Script on GitHub:")
+schlda:add_text("https://github.com/sch-lda/SCH-LUA-YIMMENU")
 
 xiaoxiao921 = AlmenuCredits:add_tab("xiaoxiao921")
 xiaoxiao921:add_text("Helped with writing code")
