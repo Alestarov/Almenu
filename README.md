@@ -16,6 +16,24 @@ Also in this cheat there is a Stat editor for account security, and many other f
 
 The script will be supplemented, about all the changes will be written here
 
+## User Agreement TOS
+
+Use agreement：
+
+Allow：
+
+1) Personal use
+   
+2) Personal use after modification
+
+3) Secondary distribution after modification
+
+forbidden:
+
+1) Commercial
+  
+2) After the modification, the secondary distribution still uses the name containing Alestarov
+
 ## Instructions for AlMenu
 ![image](https://github.com/Alestarov/YimMenu-lua-script-Alestarov_Menu/assets/108485130/3f71e97d-e48b-4881-97d7-30d3d9305b2d)
 
@@ -43,6 +61,14 @@ https://github.com/YimMenu/YimMenu
 Profile on GitHub:
 
 https://github.com/Alestarov
+## 👑sch-lda👑
+(allowed to use the code from his script "SCH-LUA-YIMMENU.lua")
+
+(The code from the script ''SCH-LUA-YIMMENU.lua'' was implemented)
+
+Script on GitHub:
+
+https://github.com/sch-lda/SCH-LUA-YIMMENU
 ## 👑 xiaoxiao921 👑
 (Helped with writing code)
 
