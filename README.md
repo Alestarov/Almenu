@@ -41,19 +41,7 @@ Casino Heist
 
 Use agreement：
 
-Allow：
-
-1) Personal use
-   
-2) Personal use after modification
-
-3) Secondary distribution after modification
-
-forbidden:
-
-1) Commercial
-  
-2) After the modification, the secondary distribution still uses the name containing Alestarov
+When editing the Script, please indicate the authors
 
 # Instructions for AlMenu
 ![image](https://github.com/Alestarov/YimMenu-lua-script-Alestarov_Menu/assets/108485130/3fe3db2c-592b-4fbb-9209-e9d141ee134f)
