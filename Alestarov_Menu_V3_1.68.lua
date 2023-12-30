@@ -1,5 +1,5 @@
--- Game version: 2944
--- Online version: 1.67
+-- Game version: 3095
+-- Online version: 1.68
 --
 --
 --Please also make sure to download the file published by the official GitHub user Alestarov or on youtube channel Alestarov_. Any other method may be a malicious script.
