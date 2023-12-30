@@ -10,7 +10,7 @@
 * [Download Yim Menu](https://github.com/YimMenu/YimMenu)
 
 ## Before using the Script, watch the Video Instruction!
-* [Video Instruction](https://youtu.be/rSr5O3diAwk)
+* [Video Instruction](https://youtu.be/uTL90ga7-DA?si=s14BaDyJc4Lrss4A)
 
 This script was created for the Yim Menu cheat.
 
